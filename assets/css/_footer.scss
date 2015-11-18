@@ -12,15 +12,6 @@ footer.footer {
         padding: 32px 8px 28px;
     }
 
-    a {
-        color: #999;
-        opacity: .5;
-
-        &:hover {
-            opacity: 1;
-        }
-    }
-
     .footer-wrap {
         position: relative;
         width: 100%;
@@ -42,6 +33,12 @@ footer.footer {
     a {
         display: inline-block;
         padding: 4px 7px;
+        opacity: .5;
+        color: #999;
+
+        &:hover {
+            opacity: 1;
+        }
     }
 }
 
@@ -53,16 +50,21 @@ footer.footer {
         margin: 0 5px;
         @include perspective(100px);
 
+        &:hover {
+        }
+
         img {
             display: block;
             width: 29px;
             height: 29px;
             margin: 0;
+            opacity: .5;
             @include transition(all .25s ease-in-out);
             @include transform-style(preserve-3d);
         }
 
         &:hover img {
+            opacity: 1;
             @include transform(rotateY(30deg));
         }
         &:last-child:hover img {
@@ -74,8 +76,8 @@ footer.footer {
 .footer-logo {
     position: absolute;
     top: 0;
-    opacity: .7;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
+    opacity: .5;
 
     @include media($mobile) {
         position: relative;
@@ -84,12 +86,15 @@ footer.footer {
 
     &_ps4 {
         left: 0;
+        width: 203px;
+
+        &:hover {
+            opacity: 1;
+        }
     }
     &_teen {
         right: 0;
-    }
-
-    &:hover {
-        opacity: 1;
+        width: 96px;
+        pointer-events: none;
     }
 }

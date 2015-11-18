@@ -20,6 +20,10 @@ main.wrap {
         margin: 0 auto 94px;
         letter-spacing: 2.75px;
 
+        @include media($tablet) {
+            font-size: 30px;
+        }
+
         @include media($mobile) {
             font-size: 20px;
         }
