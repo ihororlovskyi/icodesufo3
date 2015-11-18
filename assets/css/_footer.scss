@@ -1,8 +1,4 @@
 footer.footer {
-    // position: absolute;
-    // bottom: 0;
-    // left: 0;
-    // width: 100%;
     font-weight: 700;
     font-size: 12px;
     line-height: 18px;
@@ -10,14 +6,17 @@ footer.footer {
     padding: 32px 50px 28px;
     color: #999;
     background: rgba(#000, .5);
-    // font-family: 'Roboto Condensed', sans-serif;
+
+    @include media($mobile) {
+        background: rgba(#000, .65);
+        padding: 32px 8px 28px;
+    }
 
     a {
         color: #999;
         opacity: .5;
 
         &:hover {
-            // color: #eee;
             opacity: 1;
         }
     }
@@ -31,7 +30,7 @@ footer.footer {
         opacity: .5;
         max-width: 684px;
         margin: 0 auto;
-        padding-top: 20px;
+        padding: 20px 0 20px;
         border-top: 1px solid rgba(#999, .5);
         letter-spacing: .75px;
     }
@@ -50,14 +49,9 @@ footer.footer {
     margin-bottom: 16px;
 
     a {
-        // float: left;
         display: inline-block;
         margin: 0 5px;
         @include perspective(100px);
-
-        // &:last-child:hover {
-        //     @include transform(rotateY(-30deg));
-        // }
 
         img {
             display: block;
@@ -81,6 +75,12 @@ footer.footer {
     position: absolute;
     top: 0;
     opacity: .7;
+    margin-bottom: 20px;
+
+    @include media($mobile) {
+        position: relative;
+        display: block;
+    }
 
     &_ps4 {
         left: 0;

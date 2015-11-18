@@ -1,8 +1,16 @@
 main.wrap {
     padding: 0 40px;
 
+    @include media($mobile) {
+        padding: 0 8px;
+    }
+
     img.logo {
         margin: 77px auto 70px;
+
+        @include media($mobile) {
+            width: 260px;
+        }
     }
     .dominate {
         font-weight: 700;
@@ -11,6 +19,10 @@ main.wrap {
         text-shadow: -1px 1px 4px rgba(#590e05, .65);
         margin: 0 auto 94px;
         letter-spacing: 2.75px;
+
+        @include media($mobile) {
+            font-size: 20px;
+        }
     }
 }
 

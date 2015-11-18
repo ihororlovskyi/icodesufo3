@@ -7,13 +7,14 @@ body {
     color: #fff;
     line-height: 1.2;
     position: relative;
-    background: url(../img/bg.jpg) center top no-repeat;
+    background: url(../img/bg.jpg) center top no-repeat fixed;
     background-size: cover;
     font-weight: 500;
     @include outer-container;
 }
 
 a {
+    display: inline-block;
     color: #fff;
     text-decoration: none;
     @include transition(all .15s ease-in-out);
@@ -21,4 +22,9 @@ a {
     &:hover {
         color: #eee;
     }
+}
+
+img {
+    max-width: 100%;
+    display: inline-block;
 }
