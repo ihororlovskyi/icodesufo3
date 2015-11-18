@@ -7,33 +7,35 @@
         Earn exclusive Beta rewards.
     </div>
 
-    <form>
-        <input type="email" id="inputEmail" placeholder="Enter your email" required="" autofocus="">
-
-        <div class="dropdown">
-            <div class="dropdown-container">
-                <p class="dropdown-description">Language</p>
-                <p class="dropdown-button">CaretDown</p>
-                <ul class="dropdown-menu dropdown-select">
-                    <li>Dropdown Menu Item</li>
-                    <li>Another Item</li>
-                    <li>Item Three</li>
-                    <li>The Last One</li>
-                </ul>
-            </div>
+    <form class="invite">
+        <div class="row-form">
+            <input type="email" name="email" id="inputEmail" placeholder="Enter your email" required>
+        </div>
+        <div class="row-form">
+            <select name="language" required>
+                <option value="English">English</option>
+                <option value="Belarussian">Belarussian</option>
+                <option value="Ukrainian">Ukrainian</option>
+                <option value="Russian">Russian</option>
+            </select>
+            <span class="language">Language</span>
+        </div>
+        <div class="row-form">
+            <button type="submit">Send me invite</button>
         </div>
 
-        <button class="" type="submit">Send me invite</button>
     </form>
 </main>
 
 <footer class="footer">
     <div class="footer-wrap">
+
         <a class="footer-logo footer-logo_ps4" href="https://www.playstation.com/" target="_blank">
-            <img src="{{ site.baseurl }}/assets/img/logo-ps4.png" alt="Play Station 4 Logotype">
+            <img src="{{ site.baseurl }}/assets/img/logo-ps4.png">
         </a>
-        <a class="footer-logo footer-logo_teen" href="https://www.playstation.com/" target="_blank">
-            <img src="{{ site.baseurl }}/assets/img/logo-teen.png" alt="Teen Logotype">
+
+        <a class="footer-logo footer-logo_teen" href="#" target="_blank">
+            <img src="{{ site.baseurl }}/assets/img/logo-teen.png">
         </a>
 
         <nav class="nav-bottom">
@@ -42,6 +44,7 @@
             <a href="#">Cookies Policy</a>
             <a href="#">Terms of Service</a>
         </nav>
+
         <nav class="nav-social">
             <a href="https://twitter.com/wargaming_net" target="_blank">
                 <img src="{{ site.baseurl }}/assets/img/icons/twitter.svg">
@@ -53,10 +56,12 @@
                 <img src="{{ site.baseurl }}/assets/img/icons/facebook.svg">
             </a>
         </nav>
+
         <div class="copyright">
             <div>b© 2012–2015 wargaming.net</div>
             <div>wargaming group limited 105, agion omologiton avenue, 1080</div>
             <div>nicosia, p.o. box 23885, nicosia 1687, cyprus</div>
         </div>
+
     </div>
 </footer>
