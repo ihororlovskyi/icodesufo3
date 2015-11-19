@@ -159,6 +159,10 @@ form.invite {
     text-transform: uppercase;
 }
 
+.selectBox-options li:first-child {
+    display: none;
+}
+
 .selectBox-options li.selectBox-hover a {
     background: rgba(#fff, .10);
     color: #ddd;
