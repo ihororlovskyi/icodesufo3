@@ -48,7 +48,7 @@ form.invite {
         border: 2px solid #5a5a5a;
         border-radius: 2px;
         background: #000;
-        color: #fff;
+        color: #999;
         font-family: inherit;
         text-transform: uppercase;
         font-size: 16px;
@@ -66,10 +66,11 @@ form.invite {
 
         &:focus,
         &:hover {
+            color: #bbb;
             border-color: #999;
 
             @include placeholder {
-                color: #fff;
+                color: #bbb;
             }
         }
     }
@@ -100,81 +101,4 @@ form.invite {
             background-color: #e06e12;
         }
     }
-}
-
-.selectBox-dropdown {
-    letter-spacing: 1px;
-    min-width: 100%;
-    height: 57px;
-    font-weight: 500;
-    padding: 18px 20px;
-    border: 2px solid #5a5a5a;
-    border-radius: 2px;
-    font-family: inherit;
-    position: relative;
-    line-height: 1.2;
-    text-decoration: none;
-    color: #999;
-    outline: none;
-    background: #000;
-    box-shadow: none;
-    display: inline-block;
-    cursor: default;
-    text-transform: uppercase;
-    font-size: 16px;
-    box-sizing: border-box;
-    cursor: pointer;
-    @include transition(all .15s ease-in-out);
-
-    &:focus,
-    &:hover {
-        color: #fff;
-        border-color: #999;
-    }
-
-    &:focus .selectBox-arrow,
-    &:hover .selectBox-arrow {
-        @include triangle(22px, #999, down);
-    }
-}
-
-.selectBox-dropdown .selectBox-arrow {
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    @include triangle(22px, #5a5a5a, down);
-    @include transform(translate3d(0,-50%,0));
-    @include transition(all .15s ease-in-out);
-}
-
-.selectBox-dropdown .selectBox-label {
-    padding: 0;
-}
-
-.selectBox-options li a {
-    color: #999;
-    cursor: pointer;
-    padding: 9px 10px;
-    font-size: 14px;
-    text-transform: uppercase;
-}
-
-.selectBox-options li:first-child {
-    display: none;
-}
-
-.selectBox-options li.selectBox-hover a {
-    background: rgba(#fff, .10);
-    color: #ddd;
-}
-
-.selectBox-options li.selectBox-selected a {
-    background: rgba(#fff, .15);
-    color: #eee;
-}
-
-.selectBox-dropdown-menu {
-    border: 2px solid #999;
-    background: #000;
-    max-height: inherit;
 }
